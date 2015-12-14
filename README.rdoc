@@ -1,7 +1,3 @@
-== README
+== Fitter
 
-## Fitter
-
-Its the "Fitter" Twitter!
-
-<tt>rake doc:app</tt>.
+It's the "Fitter" Twitter!

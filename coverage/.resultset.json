@@ -64,7 +64,7 @@
         1,
         null,
         1,
-        4,
+        1,
         null,
         null
       ],
@@ -94,8 +94,15 @@
         0,
         null,
         null
+      ],
+      "/Users/ryanjohnson/code/mod3/mod3_projects/twitter-clone/app/controllers/dashboard_controller.rb": [
+        1,
+        1,
+        null,
+        null,
+        null
       ]
     },
-    "timestamp": 1450142502
+    "timestamp": 1450152565
   }
 }

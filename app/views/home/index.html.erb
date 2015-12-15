@@ -1,0 +1,8 @@
+<h1>Fitter!</h1>
+
+<% if current_user %>
+  <h2>Hey! <%= current_user.name %></h2>
+  <%= link_to "Logout", logout_path %>
+<% else %>
+  <%= link_to "Login with Twitter", login_path %>
+<% end %>

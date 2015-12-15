@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  get 'sessions/create'
+
+  root to: 'home#index'
+
+  get '/auth/twitter', as: :login
+  get '/logout', to: 'sessions#destroy', as: :logout
+  get '/auth/twitter/callback', to: 'sessions#create'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

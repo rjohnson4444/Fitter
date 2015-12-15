@@ -1,0 +1,101 @@
+{
+  "MiniTest": {
+    "coverage": {
+      "/Users/ryanjohnson/code/mod3/mod3_projects/twitter-clone/test/controllers/sessions_controller_test.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/ryanjohnson/code/mod3/mod3_projects/twitter-clone/test/integration/user_logs_in_with_twitter_test.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/ryanjohnson/code/mod3/mod3_projects/twitter-clone/test/models/user_test.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/ryanjohnson/code/mod3/mod3_projects/twitter-clone/app/models/user.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/ryanjohnson/code/mod3/mod3_projects/twitter-clone/app/controllers/home_controller.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/ryanjohnson/code/mod3/mod3_projects/twitter-clone/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        4,
+        null,
+        null
+      ],
+      "/Users/ryanjohnson/code/mod3/mod3_projects/twitter-clone/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/ryanjohnson/code/mod3/mod3_projects/twitter-clone/app/helpers/home_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/ryanjohnson/code/mod3/mod3_projects/twitter-clone/app/helpers/sessions_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/ryanjohnson/code/mod3/mod3_projects/twitter-clone/app/controllers/sessions_controller.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1450142502
+  }
+}

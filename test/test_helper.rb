@@ -3,6 +3,7 @@ require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
 require 'capybara/rails'
 require 'simplecov'
+require 'minitest/mock'
 
 SimpleCov.start
 
@@ -37,8 +38,13 @@ class ActionDispatch::IntegrationTest
       credentials: {
         token: "pizza",
         secret: "secretpizza"
-      }
+      },
     })
+  end
+
+  def login_user
+    visit root_path
+    click_link "Login"
   end
 
   def teardown

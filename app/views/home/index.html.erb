@@ -1,7 +1,10 @@
-<h1>Fitter!</h1>
-
-<% if current_user %>
-  <%= link_to "Profile", dashboard_path %>
-<% else %>
-  <%= link_to "Login with Twitter", login_path %>
-<% end %>
+<div class="ui container">
+<div class="introduction">
+  <h1 class="ui header"><span>Fitter</span></h1>
+  <% if current_user %>
+    <%= link_to "Profile", dashboard_path %>
+  <% else %>
+    <%= link_to "Login with Twitter", login_path %>
+  <% end %>
+</div>
+</div>

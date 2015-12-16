@@ -1,0 +1,39 @@
+<div class="ui fluid card">
+  <div class="content">
+    <%= image_tag(@user.user.profile_image_url, class: "left floated ui tiny rounded image") %>
+    <span class="header"><%= @user.user.name %></span>
+    <div class="meta">
+      <span class="date">@<%= @user.user.screen_name %></span>
+    </div>
+    <div class="description">
+      <div class="ui grid">
+        <div class="three column row">
+          <div class="column">
+            <div class="ui mini statistic">
+              <div class="label">
+                <div class="meta">Tweets</div>
+              </div>
+              <div class="value"> 312 </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="ui mini statistic">
+              <div class="label meta">
+                <div class="meta">Followers</div>
+              </div>
+              <div class="value"> 3123 </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="ui mini statistic">
+              <div class="label meta">
+                <div class="meta">Following</div>
+              </div>
+              <div class="value"> 23 </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

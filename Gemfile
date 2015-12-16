@@ -24,6 +24,7 @@ gem 'omniauth-twitter'
 gem 'figaro'
 gem 'less-rails-semantic_ui'
 gem 'autoprefixer-rails'
+gem 'twitter'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

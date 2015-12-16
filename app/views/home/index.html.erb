@@ -1,3 +1,7 @@
 <h1>Fitter!</h1>
 
-<%= link_to "Login with Twitter", login_path %>
+<% if current_user %>
+  <%= link_to "Profile", dashboard_path %>
+<% else %>
+  <%= link_to "Login with Twitter", login_path %>
+<% end %>

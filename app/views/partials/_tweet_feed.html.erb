@@ -1,0 +1,31 @@
+<div class="ui cards">
+  <% @user.home_timeline.each do |tweet| %>
+  <div class="ui fluid card">
+    <div class="ui feed">
+      <div class="event">
+        <div class="label">
+          <div class="header"><%= image_tag(tweet.user.profile_image_url) %></div>
+        </div>
+        <div class="content">
+          <div class="summary">
+            <div class="user">
+              <strong><%= tweet.user.name %></strong>
+            </div>
+            <div class="date">
+              @<%= tweet.user.screen_name %> | <%= time_ago_in_words(tweet.created_at) %> ago
+            </div>
+          </div>
+          <div class="extra text">
+            <%= tweet.text %>
+          </div>
+          <div class="meta">
+            <a class="like">
+              <i class="like icon"></i> 4 Likes
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</div>

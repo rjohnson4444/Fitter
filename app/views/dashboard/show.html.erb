@@ -1,10 +1,7 @@
-  <div class="ui internally celled grid">
+  <div class="ui grid">
     <div class="row">
       <div class="five wide column">
         <p><%= render partial: 'partials/user_info', locals: { user: @user } %></p>
-        <!-- <img class="ui medium circular image" src="/images/wireframe/square-image.png">
-        <h2>Hey! <%= current_user.name %></h2>
-        <%#= link_to "Logout", logout_path %> -->
       </div>
       <div class="eight wide column">
         <p><%= render partial: 'partials/tweet_feed', locals: { user: @user } %></p>

@@ -26,6 +26,7 @@ gem 'autoprefixer-rails'
 gem 'twitter'
 gem 'vcr'
 # Use ActiveModel has_secure_password
+gem 'rails_12factor', group: :production
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use Unicorn as the app server
@@ -47,10 +48,6 @@ end
 group :test do
   gem 'database_cleaner'
   gem 'webmock'
-end
-
-group :production do
-  gem 'rails_12factor'
 end
 
 group :development do

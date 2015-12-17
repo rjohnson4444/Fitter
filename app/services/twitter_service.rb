@@ -13,4 +13,8 @@ class TwitterService
   def user
     connection.user
   end
+
+  def tweets
+    connection.home_timeline
+  end
 end

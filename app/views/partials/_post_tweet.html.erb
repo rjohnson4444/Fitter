@@ -1,1 +1,10 @@
-
+<div class="ui fluid card">
+  <div class="content">
+    <%= form_tag dashboard_path, method: :post %>
+      <%= label_tag "Tweet" %>
+      <%= text_field_tag "tweet[body]" %>
+  </div>
+  <div class="extra content">
+    <%= submit_tag "Tweet", class: "ui button" %>
+  </div>
+</div>

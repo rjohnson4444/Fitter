@@ -2,6 +2,7 @@
     <div class="row">
       <div class="five wide column">
         <p><%= render partial: 'partials/user_info', locals: { user: @user } %></p>
+        <p><%= render partial: 'partials/post_tweet', locals: { user: @user } %></p>
       </div>
       <div class="eight wide column">
         <p><%= render partial: 'partials/tweet_feed', locals: { tweet_info: @tweet_info } %></p>

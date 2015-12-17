@@ -17,4 +17,8 @@ class TwitterService
   def tweets
     connection.home_timeline
   end
+
+  def post_tweet(response)
+    connection.update(response)
+  end
 end

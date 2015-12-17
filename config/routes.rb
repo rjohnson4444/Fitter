@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get '/auth/twitter/callback', to: 'sessions#create'
   get '/dashboard', to: 'dashboard#show', as: :dashboard
   post '/dashboard', to: 'dashboard#create', as: :post_a_tweet
+  patch '/dashboard', to: 'dashboard#update', as: :like_a_tweet
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

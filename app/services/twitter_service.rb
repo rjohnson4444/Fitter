@@ -21,4 +21,8 @@ class TwitterService
   def post_tweet(response)
     connection.update(response)
   end
+
+  def favorite_a_tweet(tweet_id)
+    connection.favorite(tweet_id.to_i)
+  end
 end

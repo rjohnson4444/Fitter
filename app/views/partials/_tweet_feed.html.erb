@@ -21,8 +21,9 @@
             <%= tweet.text %>
           </div>
           <div class="meta">
-            <a class="like">
-              <i class="like icon"></i> 4 Likes
+            <%= link_to like_a_tweet_path(tweet.id), class: "like", method: :patch do %>
+              <i class="like icon"></i> <%= tweet.favorite_count %> Likes
+            <% end %>
             </a>
           </div>
         </div>

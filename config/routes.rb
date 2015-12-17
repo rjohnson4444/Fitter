@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get '/logout', to: 'sessions#destroy', as: :logout
   get '/auth/twitter/callback', to: 'sessions#create'
   get '/dashboard', to: 'dashboard#show', as: :dashboard
+  post '/dashboard', to: 'dashboard#create', as: :post_a_tweet
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

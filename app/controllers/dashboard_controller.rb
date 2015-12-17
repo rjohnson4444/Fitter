@@ -10,6 +10,11 @@ class DashboardController < ApplicationController
     redirect_to dashboard_path
   end
 
+  def update
+    build_twitter_service.favorite_a_tweet(params[:format])
+    redirect_to dashboard_path
+  end
+
   private
 
     def build_twitter_service

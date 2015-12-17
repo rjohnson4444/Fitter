@@ -36,7 +36,7 @@ class ActionDispatch::IntegrationTest
         }
       },
       credentials: {
-        token: "pizza",
+        token: ENV["OAUTH_TOKEN"],
         secret: "secretpizza"
       },
     })

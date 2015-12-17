@@ -1,5 +1,7 @@
 class DashboardController < ApplicationController
   def show
-    @user = current_user.twitter
+    tweet_info = TwitterService.new(current_user)
+    @user = tweet_info.user
+    @tweets = tweet_info.tweets
   end
 end

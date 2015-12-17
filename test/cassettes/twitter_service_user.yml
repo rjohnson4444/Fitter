@@ -12,37 +12,72 @@ http_interactions:
       User-Agent:
       - TwitterRubyGem/5.15.0
       Authorization:
-      - OAuth oauth_consumer_key="", oauth_nonce="07f8069052bb47b2de8213416ed1ca3b",
-        oauth_signature="sjVzQLFrbz5iCNeT9ibxKeBuZwQ%3D", oauth_signature_method="HMAC-SHA1",
-        oauth_timestamp="1450370675", oauth_token="4558022389-Z2GplB9KyxkEs0xTsA8GZQ3BiXykehdBbH0PvtF",
+      - OAuth oauth_consumer_key="8wH3OAbhSllCpjV2D0x4Oanj3", oauth_nonce="3a6a1992135c7ace347a9e2e8e235cc7",
+        oauth_signature="mLYuUcLFp1aN2SdtixrUS%2FAFYNs%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1450379779", oauth_token="4558022389-Z2GplB9KyxkEs0xTsA8GZQ3BiXykehdBbH0PvtF",
         oauth_version="1.0"
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
-      code: 400
-      message: Bad Request
+      code: 200
+      message: OK
     headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Disposition:
+      - attachment; filename=json.json
       Content-Length:
-      - '87'
+      - '743'
       Content-Type:
-      - application/json; charset=utf-8
+      - application/json;charset=utf-8
       Date:
-      - Thu, 17 Dec 2015 16:44:35 GMT
+      - Thu, 17 Dec 2015 19:16:20 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Thu, 17 Dec 2015 19:16:20 GMT
+      Pragma:
+      - no-cache
       Server:
       - tsa_a
       Set-Cookie:
-      - guest_id=v1%3A145037067526820211; Domain=.twitter.com; Path=/; Expires=Sat,
-        16-Dec-2017 16:44:35 UTC
+      - guest_id=v1%3A145037978019795798; Domain=.twitter.com; Path=/; Expires=Sat,
+        16-Dec-2017 19:16:20 UTC
+      - lang=en; Path=/
+      Status:
+      - 200 OK
       Strict-Transport-Security:
       - max-age=631138519
+      X-Access-Level:
+      - read-write
       X-Connection-Hash:
-      - dc4f6ec234dc006e1471379ee966ae40
+      - 45213c2214f3ad42eaba80f2ae2d954d
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '15'
+      X-Rate-Limit-Remaining:
+      - '8'
+      X-Rate-Limit-Reset:
+      - '1450379855'
       X-Response-Time:
-      - '5'
+      - '42'
+      X-Transaction:
+      - ed5d36697fd11a47
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      - BouncerExempt
+      X-Xss-Protection:
+      - 1; mode=block
     body:
       encoding: ASCII-8BIT
-      string: '{"errors":[{"code":215,"message":"Bad Authentication data."}]}'
+      string: '{"id":4558022389,"id_str":"4558022389","name":"Ryan Johnson","screen_name":"rjohnson44445","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":2,"friends_count":5,"listed_count":0,"created_at":"Mon
+        Dec 14 16:26:19 +0000 2015","favourites_count":4,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":3,"lang":"en","status":{"created_at":"Thu
+        Dec 17 18:16:09 +0000 2015","id":677552879763263488,"id_str":"677552879763263488","text":"This
+        is a response tweet","source":"\u003ca href=\"http:\/\/127.0.0.1:3000\" rel=\"nofollow\"\u003eFitter-twitter\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":0,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"favorited":false,"retweeted":false,"lang":"en"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_4_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_4_normal.png","profile_link_color":"2B7BB9","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false}'
     http_version: 
-  recorded_at: Thu, 17 Dec 2015 16:44:35 GMT
+  recorded_at: Thu, 17 Dec 2015 19:16:20 GMT
 recorded_with: VCR 3.0.0

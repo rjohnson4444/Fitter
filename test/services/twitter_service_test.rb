@@ -7,10 +7,6 @@ class TwitterServiceTest < ActiveSupport::TestCase
     @service = TwitterService.new(users(:one))
   end
 
-  def find_tweet(tweet_id)
-
-  end
-
   test "#user" do
     VCR.use_cassette("twitter_service#user") do
       user = service.user

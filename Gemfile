@@ -26,6 +26,7 @@ gem 'less-rails-semantic_ui'
 gem 'autoprefixer-rails'
 gem 'twitter'
 gem 'vcr'
+gem 'webmock'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

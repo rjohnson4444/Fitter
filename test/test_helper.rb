@@ -3,6 +3,8 @@ require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
 require 'capybara/rails'
 require 'simplecov'
+require 'webmock'
+require "vcr"
 require 'minitest/mock'
 
 SimpleCov.start
@@ -11,6 +13,10 @@ class ActiveSupport::TestCase
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
   fixtures :all
   # Add more helper methods to be used by all tests here...
+  VCR.configure do |config|
+    config.cassette_library_dir = "test/cassettes"
+    config.hook_into :webmock
+  end
 end
 
 class ActionDispatch::IntegrationTest
@@ -37,7 +43,7 @@ class ActionDispatch::IntegrationTest
       },
       credentials: {
         token: ENV["OAUTH_TOKEN"],
-        secret: "secretpizza"
+        secret: ENV["OAUTH_SECRET"]
       },
     })
   end

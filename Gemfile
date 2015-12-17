@@ -27,7 +27,6 @@ gem 'less-rails-semantic_ui'
 gem 'autoprefixer-rails'
 gem 'twitter'
 gem 'vcr'
-gem 'webmock'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -45,6 +44,10 @@ group :development, :test do
   gem 'pry'
   gem 'launchy'
   gem 'shoulda'
+end
+
+group :test do
+  gem 'webmock'
 end
 
 group :development do
